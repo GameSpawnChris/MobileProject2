@@ -53,4 +53,8 @@ public class SceneManager : MonoBehaviour
         page3.SetActive(true);
         Debug.Log("Page 3 is active");
     }
+    public void AdvancePage()
+    {
+        pageProgression = pageProgression + 1;
+    }
 }
