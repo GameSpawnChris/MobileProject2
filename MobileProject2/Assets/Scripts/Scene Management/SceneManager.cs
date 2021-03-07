@@ -8,6 +8,7 @@ public class SceneManager : MonoBehaviour
     public GameObject page1;
     public GameObject page2;
     public GameObject page3;
+    public GameObject page4;
 
     public int pageProgression = 1;
 
@@ -34,9 +35,14 @@ public class SceneManager : MonoBehaviour
             ActivatePage2();
             
         }
-        else if (pageProgression == 3 && !page3.activeSelf)
+
+        if (pageProgression == 3 && !page3.activeSelf)
         {
             ActivatePage3();
+        }
+        else if (pageProgression == 4 && !page4.activeSelf)
+        {
+            ActivatePage4();
         }
         
     }
@@ -52,6 +58,12 @@ public class SceneManager : MonoBehaviour
         page2.SetActive(false);
         page3.SetActive(true);
         Debug.Log("Page 3 is active");
+    }
+    void ActivatePage4()
+    {
+        page3.SetActive(false);
+        page4.SetActive(true);
+        Debug.Log("Page 4 is active");
     }
     public void AdvancePage()
     {
