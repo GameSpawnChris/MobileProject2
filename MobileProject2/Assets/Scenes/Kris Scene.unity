@@ -366,6 +366,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762895218}
     m_Modifications:
+    - target: {fileID: 6584221766427396111, guid: 1eb830a509c3096479486e9ef27e8107,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6584221766942867272, guid: 1eb830a509c3096479486e9ef27e8107,
         type: 3}
       propertyPath: sceneManager
@@ -1155,7 +1160,6 @@ MonoBehaviour:
   page3: {fileID: 1014244504}
   page4: {fileID: 660469148}
   pageProgression: 1
-  page2Active: 0
 --- !u!4 &2117300161
 Transform:
   m_ObjectHideFlags: 0

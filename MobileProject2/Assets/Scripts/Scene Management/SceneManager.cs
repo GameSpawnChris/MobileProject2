@@ -12,7 +12,8 @@ public class SceneManager : MonoBehaviour
 
     public int pageProgression = 1;
 
-    public bool page2Active;
+    
+    
 
     // Start is called before the first frame update
     void Awake()
