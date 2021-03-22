@@ -5,24 +5,25 @@ using UnityEngine;
 public class GunCleaner : MonoBehaviour
 {
     public GameObject mask;
-    bool pressed;
+    private bool pressed = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //pos.z = -6;
+        var mousePos = Input.mousePosition;
+        mousePos.z = 1;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        if(pressed==true)
+
+        if (pressed == true)
         {
-            GameObject ob = Instantiate(mask, pos, Quaternion.identity);
-            ob.transform.parent = GameObject.Find("GunCleaner").transform;
+            GameObject maskNob = Instantiate(mask, mousePos, Quaternion.identity);
+            maskNob.transform.parent = gameObject.transform;
+        } 
+        else
+        {
+
         }
 
         if (Input.GetMouseButtonDown(0))
