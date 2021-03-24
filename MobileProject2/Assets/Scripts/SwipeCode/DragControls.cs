@@ -11,7 +11,7 @@ public class DragControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speedModifier = 0.01f;
+        speedModifier = 0.005f;
     }
 
     // Update is called once per frame
@@ -25,8 +25,8 @@ public class DragControls : MonoBehaviour
             {
                 transform.position = new Vector3(
                     transform.position.x + touch.deltaPosition.x * speedModifier,
-                    transform.position.y,
-                    transform.position.z + touch.deltaPosition.y * speedModifier);
+                    transform.position.y + touch.deltaPosition.y * speedModifier,
+                    transform.position.z);
             }
         }
     }

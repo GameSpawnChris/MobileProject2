@@ -6,6 +6,9 @@ TagManager:
   tags:
   - DropSlot
   - Bottle
+  - CleanPoint1
+  - CleanPoint2
+  - CleanPoint3
   layers:
   - Default
   - TransparentFX
