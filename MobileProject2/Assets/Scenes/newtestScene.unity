@@ -1733,7 +1733,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1101133398}
   selectedCommands:
-  - {fileID: 1101133425}
+  - {fileID: 1101133417}
   variables: []
   description: 
   stepPause: 0
@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 25
   indentLevel: 0
-  storyText: '*scoffs* ...These damn fools wouldn''t be able to handle the truth.'
+  storyText: "*scoffs* ...These damn fools wouldn't be able to handle \nthe truth."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: "There we are, as good as the day I remember this \ngun being put to
+  storyText: "There we are, as good as the day I remember this gun \nbeing put to
     use. "
   description: 
   character: {fileID: 0}
