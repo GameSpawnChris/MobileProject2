@@ -5,13 +5,13 @@ using UnityEngine;
 public class PointClick : MonoBehaviour
 {
     public GameObject crossHairs;
-    private Vector3 target;
+    //private Vector3 target;
 
 
     private void Update()
     {
-        target = transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
-        crossHairs.transform.position = target; //new Vector2(target.x, target.y);
+        //target = transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+        //crossHairs.transform.position = target; //new Vector2(target.x, target.y);
 
         if (Input.GetMouseButtonUp(0))
         {
