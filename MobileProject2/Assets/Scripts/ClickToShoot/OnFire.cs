@@ -8,31 +8,33 @@ using System.Diagnostics;
 
 public class OnFire : MonoBehaviour
 {
-    //public GameObject firePosition;
-    //public Vector3 crossHairCenter;
-    
+
+    public bool buttonFire = false;
     public float maxrayDistance = 100.0f;
 
-    public void OnFireButton()
+    public void FixedUpdate()
     {
         RaycastHit hit;
-        Ray ray = new Ray(transform.position, Vector3.down);
+        Ray ray = new Ray(transform.position, Vector3.back);
 
-        UnityEngine.Debug.DrawLine(transform.position, transform.position + Vector3.left * maxrayDistance, Color.red);
+        UnityEngine.Debug.DrawLine(transform.position, transform.position + Vector3.back * maxrayDistance, Color.red);
 
         if (Physics.Raycast(ray, out hit, maxrayDistance))
         {
-            if (hit.transform != null)
+            if (hit.transform != null && buttonFire == true)
             {
                 PrintName(hit.transform.gameObject);
             }
         }
     }
 
+    public void OnFireButton()
+    {
+        buttonFire = true;
+    }
+
     private void PrintName(GameObject gameObject)
     {
         print(gameObject.name);
     }
-
-   
 }
