@@ -10,7 +10,7 @@ public class OnFire : MonoBehaviour
 {
 
     public bool buttonFire = false;
-    public float maxrayDistance = 100.0f;
+    public float maxrayDistance = 50.0f;
 
     public void FixedUpdate()
     {
@@ -23,7 +23,8 @@ public class OnFire : MonoBehaviour
         {
             if (hit.transform != null && buttonFire == true)
             {
-                PrintName(hit.transform.gameObject);
+                //hitDetect(hit.transform.gameObject);
+                StartCoroutine(hitDetection(hit.transform.gameObject));
             }
         }
     }
@@ -33,8 +34,34 @@ public class OnFire : MonoBehaviour
         buttonFire = true;
     }
 
-    private void PrintName(GameObject gameObject)
+    IEnumerator hitDetection(GameObject gameObject)
     {
-        print(gameObject.name);
+        if (gameObject.tag == "Enemy")
+        {
+            UnityEngine.Debug.Log("Enemy (:");
+        }
+        else
+        {
+            UnityEngine.Debug.Log("Friend ):");
+        }
+
+        yield return new WaitForSeconds(0.001f);
+
+        buttonFire = false;
+
     }
+
+   /* private void hitDetect(GameObject gameObject)
+    {
+        if (gameObject.tag == "Enemy")
+        {
+            UnityEngine.Debug.Log("Enemy (:");
+        } 
+        else
+        {
+            UnityEngine.Debug.Log("Friend ):");
+        }
+
+    }
+    */
 }
