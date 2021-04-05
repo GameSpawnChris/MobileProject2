@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class CleanerPointDetect : MonoBehaviour
 {
     public bool cleanPoint1;
     public bool cleanPoint2;
     public bool cleanPoint3;
-
-    public GameObject newPhase;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +21,7 @@ public class CleanerPointDetect : MonoBehaviour
         if (cleanPoint1 == true && cleanPoint2 == true && cleanPoint3 == true)
         {
             UnityEngine.Debug.Log("DONE!");
-            newPhase.SetActive(true);
+            Fungus.Flowchart.BroadcastFungusMessage("Clean");
         }
     }
 
