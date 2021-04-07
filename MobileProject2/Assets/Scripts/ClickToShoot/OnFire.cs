@@ -15,9 +15,9 @@ public class OnFire : MonoBehaviour
     public void FixedUpdate()
     {
         RaycastHit hit;
-        Ray ray = new Ray(transform.position, Vector3.back);
+        Ray ray = new Ray(transform.position, Vector3.forward);
 
-        UnityEngine.Debug.DrawLine(transform.position, transform.position + Vector3.back * maxrayDistance, Color.red);
+        UnityEngine.Debug.DrawLine(transform.position, transform.position + Vector3.forward * maxrayDistance, Color.red);
 
         if (Physics.Raycast(ray, out hit, maxrayDistance))
         {
