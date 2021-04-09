@@ -2872,6 +2872,8 @@ GameObject:
   - component: {fileID: 1101133397}
   - component: {fileID: 1101133456}
   - component: {fileID: 1101133466}
+  - component: {fileID: 1101133468}
+  - component: {fileID: 1101133467}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2999,7 +3001,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1101133465}
   selectedCommands: []
   variables: []
   description: 
@@ -4285,7 +4288,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 58.04782
-    y: 175.07649
+    y: 174.07649
     width: 68
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4467,7 +4470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 39.911484
+    x: 40.911484
     y: 260.531
     width: 118
     height: 40
@@ -4477,7 +4480,9 @@ MonoBehaviour:
   blockName: PostShootingGame
   description: 
   eventHandler: {fileID: 1101133464}
-  commandList: []
+  commandList:
+  - {fileID: 1101133468}
+  - {fileID: 1101133467}
   suppressAllAutoSelections: 0
 --- !u!114 &1101133466
 MonoBehaviour:
@@ -4496,6 +4501,54 @@ MonoBehaviour:
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1392881480}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1101133467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101133396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  storyText: ..... Until next time
+  description: 
+  character: {fileID: 1180415138}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1101133468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101133396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 36923015}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0

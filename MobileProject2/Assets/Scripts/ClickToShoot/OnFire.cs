@@ -39,6 +39,7 @@ public class OnFire : MonoBehaviour
         if (gameObject.tag == "Enemy")
         {
             UnityEngine.Debug.Log("Enemy (:");
+            Fungus.Flowchart.BroadcastFungusMessage("Shoot");
         }
         else
         {
