@@ -5,7 +5,6 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public SceneManager sceneManager; 
 
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -51,7 +50,6 @@ public class DialogueManager : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
-            sceneManager.AdvancePage();
         }
     }
 }

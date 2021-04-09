@@ -356,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &36923016
 Transform:
   m_ObjectHideFlags: 0
@@ -2993,7 +2993,7 @@ MonoBehaviour:
   scrollPos: {x: 322.84836, y: 145.79109}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 685
+  blockViewHeight: 361
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -3003,7 +3003,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1101133465}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1101133467}
   variables: []
   description: 
   stepPause: 0
@@ -4507,7 +4508,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1101133467
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4519,7 +4520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  storyText: ..... Until next time
+  storyText: ..... Until next time, cowboy.
   description: 
   character: {fileID: 1180415138}
   portrait: {fileID: 0}
@@ -4534,7 +4535,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1101133468
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5310,7 +5311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1509034291
 SpriteRenderer:
   m_ObjectHideFlags: 0
