@@ -19,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Sherry
   - 
   - 
   - 
@@ -46,4 +46,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ship
+    uniqueID: 3660222573
+    locked: 0
+  - name: Sherry
+    uniqueID: 3509368189
+    locked: 0
+  - name: Foster
+    uniqueID: 2736013097
+    locked: 0
+  - name: Sophie
+    uniqueID: 3178166113
+    locked: 0
+  - name: Theo
+    uniqueID: 2281369915
     locked: 0
