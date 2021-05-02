@@ -8,7 +8,7 @@ public class CarSpawner2 : MonoBehaviour
     public GameObject CityBlockPrefab2;
     public GameObject CityBlockPrefab3;
     public bool CarScene;
-    public int startPoint;
+    public int startPointY;
     public float blockDelay;
 
     // Start is called before the first frame update
@@ -36,19 +36,19 @@ public class CarSpawner2 : MonoBehaviour
 
                 if (cityBlockType2 == 1)
                 {
-                    Vector3 spawnPos = new Vector3(startPoint, 0f, -30f);
+                    Vector3 spawnPos = new Vector3(50, 0f, startPointY);
                     Instantiate(CityBlockPrefab1, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }
                 if (cityBlockType2 == 2)
                 {
-                    Vector3 spawnPos = new Vector3(startPoint, 0f, -30f);
+                    Vector3 spawnPos = new Vector3(50, 0f, startPointY);
                     Instantiate(CityBlockPrefab2, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }
                 if (cityBlockType2 == 3)
                 {
-                    Vector3 spawnPos = new Vector3(startPoint, 0f, -30f);
+                    Vector3 spawnPos = new Vector3(50, 0f, startPointY);
                     Instantiate(CityBlockPrefab3, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }
