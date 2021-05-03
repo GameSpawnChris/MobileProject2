@@ -5168,7 +5168,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1101133398}
   selectedCommands:
-  - {fileID: 1101133527}
+  - {fileID: 1101133502}
   variables: []
   description: 
   stepPause: 0
@@ -7412,8 +7412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 114
   indentLevel: 0
-  storyText: Foster, we need you at your best for this mission. Do you think your
-    gonna hold up?
+  storyText: Foster, we need you at your best for this mission. Do you think you
+    are gonna hold up?
   description: 
   character: {fileID: 923245507}
   portrait: {fileID: 0}
