@@ -36,19 +36,19 @@ public class OutsideSpawner : MonoBehaviour
 
                 if (cityBlockType2 == 1)
                 {
-                    Vector3 spawnPos = new Vector3(startPointX, 0f, 20f);
+                    Vector3 spawnPos = new Vector3(startPointX, 0f, 15f);
                     Instantiate(CityBlockPrefab1, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }
                 if (cityBlockType2 == 2)
                 {
-                    Vector3 spawnPos = new Vector3(startPointX, 0f, 20f);
+                    Vector3 spawnPos = new Vector3(startPointX, 0f, 15f);
                     Instantiate(CityBlockPrefab2, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }
                 if (cityBlockType2 == 3)
                 {
-                    Vector3 spawnPos = new Vector3(startPointX, 0f, 20f);
+                    Vector3 spawnPos = new Vector3(startPointX, 0f, 15f);
                     Instantiate(CityBlockPrefab3, spawnPos, Quaternion.identity);
                     yield return new WaitForSeconds(blockDelay);
                 }

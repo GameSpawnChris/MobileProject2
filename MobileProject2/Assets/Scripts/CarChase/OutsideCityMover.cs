@@ -17,7 +17,7 @@ public class OutsideCityMover : MonoBehaviour
         objCollider = GetComponent<BoxCollider>();
         rb = GetComponent<Rigidbody>();
 
-        rb.velocity = new Vector3(ObjectSpeedX, 0, 0);
+        rb.velocity = new Vector3(ObjectSpeedX, 0, 10);
 
     }
 
